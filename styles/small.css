@@ -1,0 +1,84 @@
+:root{
+    --color_page: #CEB1D4;
+    --color_text: #2A2A5f;
+    --color_accent: #6862CO;
+    --color_accent2: #898CBO;
+
+    --h1: 50px;
+    --h2: 35px;
+    --p: 20px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+html {
+    background-color: var(--color_page);
+    color: var(--color_text);
+    font-family: "zain", arial, serif;
+    font-weight: 400;
+    font-size: var(--p);
+}
+
+h1, h2 {
+    font-family: "zain", arial, serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-bar {
+    display: none;
+    list-style: none;
+    margin: 2em 0;
+    flex-direction: column;
+}
+
+.nav-bar.open {
+    display: flex;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--color_accent);
+    padding: 3em;
+    align-self: center;
+    margin: .5em;
+}
+
+.nav-bar.open a:hover {
+    border-left: .2em solid var(--color_text);
+}
+
+
+.menu {
+    display: block;
+    text-decoration: none;
+    color: var(--color_text);
+    padding: .3em;
+}
+
+.menu::before{
+    content: '≡';
+}
+
+.menu.open::before {
+    content: '×';
+}
