@@ -1,9 +1,10 @@
 :root{
     --color_page: #CEB1D4;
     --color_text: #2A2A5f;
-    --color_accent: #6862CO;
-    --color_accent2: #898CBO;
-
+    --color_accent: #6C486F;
+    --color_accent2: #985484;
+    /*--color_complete: #4E5f4B;*/
+    --color_complete: #A3BEA2;
     --h1: 50px;
     --h2: 35px;
     --p: 20px;
@@ -25,54 +26,78 @@ html {
     font-size: var(--p);
 }
 
-h1, h2 {
+h1, h2, .name, .navigation a {
     font-family: "zain", arial, serif;
     font-weight: 700;
 }
 
-h1 {
+h1, .name {
     font-size: var(--h1);
 }
 
-h2 {
+h2{
     font-size: var(--h2);
 }
 
 
-header img {
+
+.name img {
     width: 100px;
     height: auto;
+    margin: 10px;
+    justify-self: right;
 }
 
-.nav-bar {
-    display: none;
-    list-style: none;
-    margin: 2em 0;
-    flex-direction: column;
-}
-
-.nav-bar.open {
-    display: flex;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    color: var(--color_accent);
-    padding: 3em;
-    align-self: center;
+.name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5em;
     margin: .5em;
 }
 
-.nav-bar.open a:hover {
-    border-left: .2em solid var(--color_text);
+.name p {
+    justify-self: left;
+    align-self: center
 }
 
 
+.navigation {
+	list-style: none;
+	margin: 1em auto;
+}
+
+.navigation li {
+	display: none;
+    background-color: var(--color_accent);
+}
+
+.navigation a {
+	display: block;
+	padding: .5em;
+    margin: 0 1em;
+	text-align: left;
+	text-decoration: none;
+    color: var(--color_page);
+}
+
+.open li {
+	display: block;
+}
+
+.navigation a:hover,
+.navigation a:active{
+    border-left: .2em solid var(--color_page);
+}
+
+.active {
+    border-left: .2em solid var(--color_page);
+}
+
 .menu {
-    display: block;
     text-decoration: none;
     color: var(--color_text);
     padding: .3em;
+    font-size: 25px;
 }
 
 .menu::before{
@@ -81,4 +106,83 @@ header img {
 
 .menu.open::before {
     content: '×';
+}
+
+
+main {
+    display: block;
+}
+
+main section {
+    border: 2px solid var(--color_accent2);
+    border-radius: 10px;
+    margin: 1em;
+    text-align: center;
+
+}
+
+main section h2 {
+    margin: .8em;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.course{
+    padding: 1em;
+}
+.course li{
+    margin-left: 1em;
+}
+
+
+.utah img {
+    height: 10em;
+    width: auto;
+    margin: 1em;
+}
+
+
+.filter {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+}
+
+.filter a {
+    text-decoration: none;
+    color: var(--color_text);
+    flex: 1;
+    border: 2px solid var(--color_accent);
+    border-radius: 10px;
+    margin: .2em;
+}
+
+.certificates p:not(.credits) {
+    display: block;
+    width: 50%;
+    height: auto;
+    padding: 1em;
+    margin: .5em auto;
+    text-align: center;
+    border: 2px solid var(--color_accent);
+    border-radius: 10px;
+}
+
+.certificates .complete {
+    background-color: var(--color_complete);
+    /*color: var(--color_page);*/
+}
+
+.credits {
+    margin: .5em;
+}
+
+
+
+footer{
+    padding: 1em;
+    text-align: center;
 }
