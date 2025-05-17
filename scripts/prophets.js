@@ -1,6 +1,5 @@
 const url = "https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json";
 
-
 async function getProphetData() {
     const response = await fetch(url);
     const data = await response.json();
@@ -20,7 +19,7 @@ const displayProphets = (prophets) => {
         portrait.setAttribute("alt", `Portrait of ${fullName.innerHTML}`);
         portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width", "340");
-        portrait.setAttribute("height", "440")
+        portrait.setAttribute("height", "440");
 
         card.appendChild(fullName);
         card.appendChild(portrait);

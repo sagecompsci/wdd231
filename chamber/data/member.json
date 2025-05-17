@@ -2,15 +2,17 @@
   "companies": [
     {
       "name": "Bag End Bakery",
-      "address": "1 Bagshot Row, Hobbiton, The Shire",
+      "street": "1 Bagshot Row",
+      "country": "Hobbiton, The Shire",
       "phone": "(111) 111-1111",
       "url": "https://www.bagendbakery.com/",
       "image": "images/bagendbakery.webp",
       "member": 1
     },
     {
-      "name": "Green Dragon Inn & Brewery",
-      "address": "Bywater Road, Hobbiton, The Shire",
+      "name": "Green Dragon Brewery",
+      "street": "Bywater Road",
+      "country": "Hobbiton, The Shire",
       "phone": "(222) 222-2222",
       "url": "https://www.greendragon.com/",
       "image": "images/greendragon.webp",
@@ -18,7 +20,8 @@
     },
     {
       "name": "Took's Tailoring",
-      "address": "3 Tuckborough Lane, Tuckborough, The Shire",
+      "street": "3 Tuckborough Lane",
+      "country": "Tuckborough, The Shire",
       "phone": "(333) 333-3333",
       "url": "https://www.tookstailoring.com/",
       "image": "images/tookstailoring.webp",
@@ -26,7 +29,8 @@
     },
     {
       "name": "Gardens of Gondor Florist",
-      "address": "4 Garden Street, Hobbiton, The Shire",
+      "street": "4 Garden Street",
+      "country": "Hobbiton, The Shire",
       "phone": "(444) 444-4444",
       "url": "https://www.gondorflorist.com/",
       "image": "images/gondorflorist.webp",
@@ -34,7 +38,8 @@
     },
     {
       "name": "Second Breakfast Cafė",
-      "address": "17 Morningdew Lane, Bywater, The Shire",
+      "street": "17 Morningdew Lane",
+      "country": "Bywater, The Shire",
       "phone": "(555) 555-5555",
       "url": "https://www.secondbreakfast.com/",
       "image": "images/secondbreakfast.webp",
@@ -42,15 +47,17 @@
     },
     {
       "name": "Brandywine Books & Scrolls",
-      "address": "22 Riverbank Way, Bucklebury, The Shire",
+      "street": "22 Riverbank Way",
+      "country": "Bucklebury, The Shire",
       "phone": "(666) 666-6666",
       "url": "https://www.brandywinebooks.com/",
       "image": "images/brandywinebooks.webp",
       "member": 3
     },
     {
-      "name": "Hillfoot Smithy & Forge",
-      "address": "9 Forge Hollow, Delving, The Shire",
+      "name": "Hillfoot Smithy",
+      "street": "9 Forge Hollow",
+      "country": "Delving, The Shire",
       "phone": "(777) 777-7777",
       "url": "https://www.hillfootsmithy.com/",
       "image": "images/hillfootsmithy.webp",

@@ -7,42 +7,54 @@
         <meta name="description" content="chamber of commerce page for The Shire">
         <meta name="author" content="Sage Reid">
 
+        <script src="scripts/members.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/display.js" defer></script>
+
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
 
-        <script src="scripts/members.js" defer></script>
-
-
+        <meta property="title" content="The Shire Chamber of Commerce">
+        <meta property="description" content="chamber of commerce page for the shire">
         <meta property="og:image" content="https://images.unsplash.com/photo-
         1564314016469-d0e1851b24a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=
         M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <meta property="og:url" content="">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;
+        0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
         <header>
-            <img src="images/logo.webp" alt="logo">
             <div class="heading">
+                <img src="images/logo.webp" alt="logo">
                 <h2>The Shire</h2>
                 <p>Chamber of Commerce</p>
             </div>
 
-            <a href="#" class="menu"></a>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Directory</a>
-                <a href="#">Join</a>
-                <a href="#">Discover</a>
-            </nav>
-
+            <div class="navigation">
+                <a href="#" class="menu"></a>
+                <div class="nav-bar">
+                    <nav>
+                        <a href="#">Home</a>
+                        <a class="active" href="#">Directory</a>
+                        <a href="#">Join</a>
+                        <a href="#">Discover</a>
+                    </nav>
+                </div>
+            </div>
         </header>
 
         <main>
-            <nav id="toggle">
-                <a href="#">List</a>
-                <a href="#">Grid</a>
-            </nav>
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
 
-            <div id="cards"></div>
+            <div id="cards" class="grid"></div>
         </main>
 
         <footer>
@@ -55,16 +67,16 @@
             </div>
 
             <div class="media">
-                <a href=""><img src="images/youtube" alt="youtube"></a>
-                <a href=""><img src="images/twitter" alt="twitter"></a>
-                <a href=""><img src="images/linkedin" alt="linkedin"></a>
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="https://x.com/"><img src="images/x.png" alt="twitter"></a>
+                <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
             </div>
 
             <div class="pageinfo">
                 <p>WDD231 Class Project</p>
                 <p>Sage Reid</p>
-                <p>©<span class="copyright"> The Shire Chamber of Commerce</span></p>
-                <p>Last modified: <span class="lastmodified"></span></p>
+                <p>©<span id="copyright"></span> The Shire Chamber of Commerce</p>
+                <p>Last modified: <span id="lastModified"></span></p>
             </div>
         </footer>
     </body>

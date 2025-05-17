@@ -1,0 +1,50 @@
+@media screen and (min-width: 500px){
+    .menu {
+        display: none;
+    }
+
+    .navigation{
+        align-content: center;
+    }
+
+    .nav-bar,
+    .nav-bar.open{
+        display: block;
+    }
+
+    .nav-bar nav,
+    .nav-bar.open nav{
+        display: flex;
+        justify-content: space-around;
+        height: 1fr;
+        align-content: center;
+        margin: auto;
+    }
+
+    .nav-bar a:hover,
+    .active {
+        position: relative;
+        bottom: .2em;
+        border-left: none;
+        border-bottom: .2em solid var(--color_accent2);
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2em 10em;
+        text-align: center;
+    }
+
+    .contact {
+        align-self: center;
+    }
+
+    .media {
+        align-self: center;
+    }
+
+    .pageinfo {
+        align-self: center;
+    }
+}

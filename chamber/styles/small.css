@@ -1,17 +1,127 @@
 :root {
-    --1: #DBD4B7;
+    --color_page: #DBD4B7;
     --2: #191717;
     --3: #D9E1E9;
     --4: #AFB541;
     --5: #D7C145;
-    --6: #7CACBC;
     --7: #5B6D73;
     --8: #C9ACB4;
     --9: #7CACBC;
     --10: #C47414;
     --11: #3B3C08;
-    --12: #132517;
+    --color_text: #132517;
     --13: #6F816A;
-    --14: #5B6D73;
+    --color_accent: #303F55;
+    --color_accent2: #96B8D9;
+}
+
+html {
+    background-color: var(--color_page);
+    color: var(--color_text);
+}
+
+h1, h2, nav a {
+    font-family: zain, arial, sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: zain, "Times New Roman", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color_accent);
+    color: var(--color_accent2);
+}
+
+
+.heading img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 1em;
+}
+
+.menu {
+    text-decoration: none;
+    color: var(--color_accent2);
+}
+
+.menu::before{
+    content: '≡';
+}
+
+.menu.open::before {
+    content: '×';
+}
+
+.nav-bar {
+    display: none;
+}
+
+.nav-bar.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar.open a {
+    display: block;
+    padding: .5em;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--color_accent2);
+    font-size: 1.2em;
+}
+
+.nav-bar a:hover,
+.active {
+    border-left: .2em solid var(--color_accent2);
+}
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 1em;
+}
+
+
+.grid .card {
+    border: 3px solid var(--color_accent);
+    text-align: center;
+    padding: 1em;
+}
+
+.grid .title {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.grid .title h2 {
+    align-self: center;
+}
+
+.grid .title img {
+    margin: .5em;
+}
+
+.list .title img {
+    display: none;
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
 }
 
