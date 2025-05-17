@@ -16,7 +16,6 @@
     .nav-bar.open nav{
         display: flex;
         justify-content: space-around;
-        height: 1fr;
         align-content: center;
         margin: auto;
     }
