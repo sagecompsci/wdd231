@@ -35,6 +35,17 @@
         text-align: center;
     }
 
+
+
+    .info {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .info h2 {
+        text-align: center;
+    }
+
     .contact {
         align-self: center;
     }
@@ -45,5 +56,10 @@
 
     .pageinfo {
         align-self: center;
+    }
+
+    #spotlight {
+        display: flex;
+        justify-content: space-around;
     }
 }

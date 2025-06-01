@@ -1,9 +1,9 @@
 const file = "data/member.json";
 
-async function getMemberData() {
+export async function getMemberData(callback) {
     const response = await fetch(file);
     const data = await response.json();
-    displayMembers(data.companies);
+    callback(data.companies);
 }
 
 const displayMembers = (members) => {
@@ -47,4 +47,4 @@ const displayMembers = (members) => {
     });
 }
 
-getMemberData();
+getMemberData(displayMembers);

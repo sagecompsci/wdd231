@@ -74,6 +74,11 @@ header {
     border-left: .2em solid var(--color_accent2);
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 #cards.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -105,6 +110,16 @@ header {
     display: none;
 }
 
+#spotlight-h2{
+    text-align: center;
+}
+
+.s-card {
+    border: 2px solid var(--color_accent);
+    padding: 1em;
+    text-align: center;
+    margin: 1em;
+}
 
 footer {
     text-align: center;
@@ -115,3 +130,11 @@ footer img {
     height: 50px;
 }
 
+
+#call {
+    position: relative;
+    bottom: 10rem;
+    left: 2rem;
+    font-size: 1.3em;
+    text-decoration: none;
+}
