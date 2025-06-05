@@ -62,4 +62,13 @@
         display: flex;
         justify-content: space-around;
     }
+
+    #join-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form1-heading {
+        grid-column: 1/-1;
+    }
 }

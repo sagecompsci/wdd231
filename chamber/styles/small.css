@@ -138,3 +138,100 @@ footer img {
     font-size: 1.3em;
     text-decoration: none;
 }
+
+.form1 {
+    max-width: 80%;
+}
+
+.form1 label,
+.form1 input:not([type="radio"]),
+.form1 textarea {
+    display: block;
+    padding: 10px;
+    /*margin: auto;*/
+    width: 100%
+}
+
+.form1 div {
+    margin-left: 1em;
+    padding: 10px;
+}
+
+.form1 input[type="radio"] {
+    margin-left: 2em;
+}
+
+.form1 label {
+    padding: 1.2em;
+}
+
+.form1 textarea {
+    height: 4em;
+}
+
+.form1 input[type="submit"] {
+    width: 100%;
+    margin-left: 1.5em;
+}
+.form1 input:required {
+    border-bottom: solid 8px red;
+}
+
+.form1 input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+
+#results {
+    text-transform: capitalize;
+}
+
+.member-cards div {
+    border: 3px solid var(--color_text);
+    text-align: center;
+    margin: 2em;
+    height: 10em;
+}
+
+.np {
+    background-color: #b1ff91;
+    background-image: linear-gradient(-60deg, #b1ff91, #ccffb5);
+    background-size: 600% 600%;
+    animation: colorChange 5s infinite linear;
+}
+
+.bronze {
+    background-color: #ce8946;
+    background-image: linear-gradient(-60deg, #d5975a, #ce8946);
+    background-size: 600% 600%;
+    animation: colorChange 5s infinite linear;
+}
+
+.silver {
+    background-color: #c0c0c0;
+    background-image: linear-gradient(-60deg, #c0c0c0, #e2e2e2);
+    background-size: 600% 600%;
+    animation: colorChange 5s infinite linear;
+}
+
+.gold {
+    background-color: #FFD700;
+    background-image: linear-gradient(-60deg, #ffe15b, #ffd700);
+    background-size: 600% 600%;
+    animation: colorChange 5s infinite linear;
+}
+
+@keyframes colorChange {
+    0%{
+        background-position: 0 85%;
+    }
+
+    50% {
+        background-position: 100% 20%;
+    }
+
+    100% {
+        background-position: 0 85%;
+    }
+}
+

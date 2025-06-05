@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>The Shire Chamber of Commerce Join</title>
+        <meta name="description" content="chamber of commerce join page for The Shire">
+        <meta name="author" content="Sage Reid">
+
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/modal.js" defer></script>
+        <script src="scripts/form.js" defer></script>
+
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/large.css">
+
+        <link rel="icon" href="images/favicon.ico">
+
+        <meta property="og:title" content="The Shire Chamber of Commerce join" />
+        <meta property="og:description" content="chamber of commerce join page for the shire"/>
+        <meta property="og:image" content="https://images.unsplash.com/photo-1564314016469-d0e1851b24a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        <meta property="og:url" content="https://sagecompsci.github.io/wdd231/chamber/directory.html"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <img src="images/logo.webp" alt="logo">
+                <h2>The Shire</h2>
+                <p>Chamber of Commerce</p>
+            </div>
+
+            <div class="navigation">
+                <a href="#" class="menu"></a>
+                <div class="nav-bar">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="directory.html">Directory</a>
+                        <a class="active" href="join.html">Join</a>
+                        <a href="#">Discover</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main id="join-page">
+            <h1 class="form1-heading">Join</h1>
+            <form method="get" action="thanks.html" class="form1">
+                <label>First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Organization Title
+                    <input type="text" id="organization-title" name="organization-title" required autocomplete="organization-title" title="Your Organization Title"></label>
+                <label>Email Address
+                    <input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="example@email.com"></label>
+                <label>Phone Number
+                    <input type="tel" name="phone" required autocomplete="tel" title="Your Phone Number"></label>
+                <label>Organization Name
+                    <input type="text" name="organization" required autocomplete="organization" title="Your Organization name"></label>
+
+                <div>Membership Level</div>
+                <label><input type="radio" name="level" value="non-profit">Non-profit</label>
+                <label><input type="radio" name="level" value="bronze">Bronze</label>
+                <label><input type="radio" name="level" value="silver">Silver</label>
+                <label><input type="radio" name="level" value="gold">Gold</label>
+
+                <label>Organization Description
+                    <textarea name="description" title="description"></textarea></label>
+                <input type="hidden" name="time" id="time">
+                <input type="submit" value="Apply Now">
+            </form>
+
+            <section class="member-cards">
+                <div class="np">
+                    <h2>Non-Profit Membership Level</h2>
+                    <button id="open-np">Learn More</button>
+                    <dialog id="modal-np">
+                        <h2>Non-Profit</h2>
+                        <p>Designed for registered non-profit organizations, this membership level offers community
+                            exposure and essential networking tools without the cost of for-profit tiers.</p>
+                        <h3>Benefits: </h3>
+                        <p>Inclusion in member directory</p>
+                        <p>Access to networking events</p>
+                        <p>Opportunity to participate in community outreach</p>
+                        <p>Discounted booth space at chamber events</p>
+                        <button id="close-np">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="bronze">
+                    <h2>Bronze Membership Level</h2>
+                    <button id="open-bronze">Learn More</button>
+                    <dialog id="modal-bronze">
+                        <h3>Bronze</h3>
+                        <p>Ideal for small businesses or startups looking to grow their presence
+                            and make local connections.</p>
+                        <h3>Benefits: </h3>
+                        <p>All non-profit benefits</p>
+                        <p>Social media mentions and highlights</p>
+                        <p>Member spotlight in monthly newsletter</p>
+                        <p>Ribbon cutting ceremony for new businesses</p>
+                        <button id="close-bronze">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="silver">
+                    <h2>Silver Membership Level</h2>
+                    <button id="open-silver">Learn More</button>
+                    <dialog id="modal-silver">
+                        <h3>Silver</h3>
+                        <p>For established businesses ready to deepen community engagement and expand visibility.</p>
+                        <h3>Benefits: </h3>
+                        <p>All bronze benefits</p>
+                        <p>Featured listing in business directory</p>
+                        <p>Complimentary tickets to select events</p>
+                        <p>Co-sponsorship opportunities for networking mixers</p>
+                        <button id="close-silver">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="gold">
+                    <h2>Gold Membership Level</h2>
+                    <button id="open-gold">Learn More</button>
+                    <dialog id="modal-gold">
+                        <h3>Gold</h3>
+                        <p>Our premier level, Gold Members enjoy maximum visibility, influence,
+                            and recognition within the chamber and broader community.</p>
+                        <h3>Benefits</h3>
+                        <p>All silver benefits</p>
+                        <p>Priority placement in publications and listings</p>
+                        <p>Exclusive access to VIP networking events</p>
+                        <p>Logo placement on chamber homepage</p>
+                        <p>Opportunity to serve on advisory committees</p>
+                        <button id="close-gold">❌</button>
+                    </dialog>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="contact">
+                <p>The Shire Chamber of Commerce</p>
+                <p>501 Buckland Road, Matamata 3472</p>
+                <p>New Zealand</p>
+                <p>info@theshirecc.org</p>
+                <p>(123) 456-7890</p>
+            </div>
+
+            <div class="media">
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="https://x.com/"><img src="images/x.png" alt="twitter"></a>
+                <a href=""><img src="images/linkedin.png" alt="linkedin"></a>
+            </div>
+
+            <div class="pageinfo">
+                <p>WDD231 Class Project</p>
+                <p>Sage Reid</p>
+                <p>©<span id="copyright"></span> The Shire Chamber of Commerce</p>
+                <p>Last modified: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>
