@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "name": "Bag End",
+      "description": "The most iconic home in Hobbiton, Bag End is the hilltop residence of Bilbo and Frodo Baggins. Known for its round door and cozy interior, it represents the heart of the Shire.",
+      "address": "1 Bagshot Row, Hobbiton, Westfarthing, The Shire",
+      "image": "images/bag_end.webp"
+    },
+    {
+      "name": "The Green Dragon Inn",
+      "description": "A lively meeting spot for Hobbits to enjoy ale, music, and good company. The inn also hosts weekly trivia nights and second breakfast specials.",
+      "address": "Bywater Road, Bywater, Westfarthing, The Shire",
+      "image": "images/inn.webp"
+    },
+    {
+      "name": "Farmer Maggot’s Mushroom Farm",
+      "description": "Home of the Shire’s finest fungi, this farm is famous for its guarded fields and gourmet mushrooms. Guided tours available—just watch out for the dogs.",
+      "address": "Bamfurlong Farm, Marish, Eastfarthing, The Shire",
+      "image": "images/farm.webp"
+    },
+    {
+      "name": "The Party Tree & Field",
+      "description": "Located in Hobbiton’s center, this is the place for festivals, dances, and birthday bashes (including one rather famous eleventy-first). Open to all for celebrations.",
+      "address": "South Hill Lane, Hobbiton, Westfarthing, The Shire",
+      "image": "images/party_tree.webp"
+    },
+    {
+      "name": "Michel Delving Library & Archives",
+      "description": "A quiet retreat for scholarly Hobbits, this library preserves the rich history and genealogy of the Shire. Great for studying maps, old scrolls, and gardening tips.",
+      "address": "Archives Square, Michel Delving, White Downs, The Shire",
+      "image" : "images/library.webp"
+    },
+    {
+      "name": "Brandywine Bridge Market",
+      "description": "Located at the eastern border, this bustling market offers fresh produce, crafts, and Brandybucks’ best cheese. Open every Saturday.",
+      "address": "Market Row, Brandywine Bridge, Buckland, The Shire",
+      "image": "images/market.webp"
+    },
+    {
+      "name": "Cotton Family Textile Workshop",
+      "description": "Known for their soft wool and vibrant dyes, the Cottons supply much of the Shire’s clothing and blankets. Tours and weaving demos offered.",
+      "address": "Willow Lane, Bywater, Westfarthing, The Shire",
+      "image": "images/cotton.webp"
+    },
+    {
+      "name": "Bywater Gardens",
+      "description": "A public garden maintained by the Shire Gardeners’ Guild. Features native flowers, singing birds, and benches for midday naps.",
+      "address": "Garden Way, Bywater, Westfarthing, The Shire",
+      "image": "images/garden.webp"
+    }
+  ]
+}

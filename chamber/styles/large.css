@@ -71,4 +71,21 @@
     .form1-heading {
         grid-column: 1/-1;
     }
+
+    #places {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .place-card:hover {
+        box-shadow: 0 0 50px black;
+    }
+
+    .place-card {
+        grid-template-areas:
+        "name ."
+        "img description"
+        "img address"
+        "button button"
+    }
 }

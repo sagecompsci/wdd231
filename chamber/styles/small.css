@@ -235,3 +235,40 @@ footer img {
     }
 }
 
+.place-card {
+    margin: 1em;
+    display: grid;
+    grid-template-areas:
+    "name"
+    "img"
+    "description"
+    "address"
+    "button";
+    border: 1px solid var(--color_accent);
+}
+
+.place-card > img{
+    display: block;
+    grid-area: img;
+    margin: 1em;
+}
+
+.place-card > h2 {
+    grid-area: name;
+    margin: 1em;
+}
+
+.place-card > p {
+    grid-area: description;
+    margin: 1em;
+}
+
+.place-card > address {
+    grid-area: address;
+    margin: 1em;
+}
+
+.place-card > button {
+    grid-area: button;
+    margin: 1em;
+}
