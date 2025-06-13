@@ -1,0 +1,70 @@
+@media screen and (min-width: 600px){
+    header div {
+        justify-content: center;
+    }
+
+    header h1 {
+        align-self: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        width: 50%;
+        margin: auto;
+        justify-content: space-around;
+        padding: 1em;
+    }
+
+    .nav a {
+        display: block;
+        text-decoration: none;
+        color: var(--color_h1);
+    }
+
+    .nav a:hover,
+    .active {
+        border-bottom: .3em solid var(--color_h1);
+        position: relative;
+        bottom: .3em;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .events {
+        display: grid;
+        grid-template-areas:
+    "current upcoming"
+    "current recent";
+    }
+
+    .current{
+        grid-area: current;
+    }
+
+    .upcoming {
+        grid-area: upcoming;
+    }
+
+    .recent {
+        grid-area: recent;
+    }
+
+    .card {
+        width: 80%;
+        margin: 1em auto;
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+    }
+
+    .form-join {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}

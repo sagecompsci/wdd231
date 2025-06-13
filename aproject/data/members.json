@@ -55,18 +55,6 @@
       "joined": "May 6th 2025"
     },
     {
-      "username": "J.",
-      "roles": [],
-      "image": "https://cdn.discordapp.com/avatars/867475984134963220/04b858b32e01f32dff79c15c39fb87a4.webp?size=240",
-      "joined": "May 30th 2025"
-    },
-    {
-      "username": "oblivion",
-      "roles": [],
-      "image": "https://cdn.discordapp.com/avatars/905155255724023868/892b337dad87e094f175788127f764d5.webp?size=240",
-      "joined": "May 25th 2025"
-    },
-    {
       "username": "SeaMic",
       "roles": ["f", "p"],
       "image": "https://cdn.discordapp.com/avatars/911382357683093564/75c24389e360b271a22dd197fb186d7f.webp?size=240",
@@ -77,6 +65,12 @@
       "roles": ["pvp", "w", "f"],
       "image": "https://cdn.discordapp.com/avatars/1103809810664796230/35e613fe02c2fba7dfb335c1d87a4727.webp?size=240",
       "joined": "May 17th 2025"
+    },
+    {
+      "username": "oblivion",
+      "roles": [],
+      "image": "https://cdn.discordapp.com/avatars/905155255724023868/892b337dad87e094f175788127f764d5.webp?size=240",
+      "joined": "May 25th 2025"
     },
     {
       "username": "The saxophonist",
@@ -107,6 +101,12 @@
       "roles": ["r", "w", "b", "f", "p"],
       "image": "https://cdn.discordapp.com/avatars/1350056381444657253/9f270b07f3b173f55cf51026d42746fb.webp?size=240",
       "joined": "May 25th 2025"
+    },
+    {
+      "username": "J.",
+      "roles": [],
+      "image": "https://cdn.discordapp.com/avatars/867475984134963220/04b858b32e01f32dff79c15c39fb87a4.webp?size=240",
+      "joined": "May 30th 2025"
     },
     {
       "username": "Pizzanamedsmurf",

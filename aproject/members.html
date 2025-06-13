@@ -7,29 +7,43 @@
         <meta name="description" content="the home page for the hollow smp minecraft server">
         <meta name="author" content="description">
 
+        <script src="scripts/menu.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/members.js" defer></script>
+
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
+
         <header>
-            <img src="images/logo.webp" alt="Hollow SMP logo">
-            <h1>Hollow SMP</h1>
-            <a href="#" class="menu"></a>
-            <nav>
+            <div>
+                <img src="images/logo.webp" alt="Hollow SMP logo">
+                <h1>Hollow SMP</h1>
+
+                <a href="#" class="menu"></a>
+            </div>
+            <nav class="nav">
                 <a href="index.html">Home</a>
                 <a class="active" href="members.html">Members</a>
                 <a href="join.html">Join</a>
             </nav>
         </header>
 
-        <main id="main-members">
+        <main>
             <h2>Members</h2>
-            <p><span></span> members</p>
+            <p class="center"><span class="num_members"></span> members</p>
             <section id="members"></section>
         </main>
 
         <footer>
+            <p>©<span class="year"></span></p>
+            <p><span class="modified"></span></p>
 <!--
             back to top
             copyright

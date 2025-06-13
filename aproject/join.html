@@ -7,16 +7,26 @@
         <meta name="description" content="the join page for the hollow smp minecraft server">
         <meta name="author" content="description">
 
+        <script src="scripts/menu.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <img src="images/logo.webp" alt="Hollow SMP logo">
-            <h1>Hollow SMP</h1>
-            <a href="#" class="menu"></a>
-            <nav>
+            <div>
+                <img src="images/logo.webp" alt="Hollow SMP logo">
+                <h1>Hollow SMP</h1>
+
+                <a href="#" class="menu"></a>
+            </div>
+            <nav class="nav">
                 <a href="index.html">Home</a>
                 <a href="members.html">Members</a>
                 <a class="active" href="join.html">Join</a>
@@ -25,8 +35,72 @@
 
         <main id="main-join">
             <h2>Join</h2>
-            <form>
+            <form method="get" action="thanks.html" class="form-join">
+                <div class="question">
+                    <div><span class="bold">Have you ever played a Minecraft SMP before?<span class="red">*</span></span></div>
+                    <label><input type="radio" name="played" value="yes" required>Yes</label>
+                    <label><input type="radio" name="played" value="no">No</label>
+                    <label><input type="radio" name="played" value="realm">Yes, but on a Bedrock Edition Realm</label>
+                    <label><input type="radio" name="played" value="other">Other: <input type="text" name="other" class="other"></label>
+                </div>
 
+                <div class="question">
+                    <label><span class="bold">If you selected other, describe what you've played.</span>
+                        <textarea name="describe-played"></textarea></label>
+                </div>
+
+                <div class="question">
+                    <div><span class="bold">Have you ever been banned or kicked from an SMP?<span class="red">*</span></span></div>
+                    <label><input type="radio" name="banned" value="yes" required>Yes</label>
+                    <label><input type="radio" name="banned" value="no">No</label>
+                </div>
+
+                <div class="question">
+                    <label><span class="bold">If you said yes, describe in detail why you were banned or kicked, and why. If it was
+                        resolved, please also include that in your response.</span>
+                        <textarea name="describe-banned"></textarea></label>
+                </div>
+
+                <div class="question">
+                    <div><span class="bold">How active would you be on the server?<span class="red">*</span></span></div>
+                    <label><input type="radio" name="active" value="very" required>Very active, online for hours a day.</label>
+                    <label><input type="radio" name="active" value="pretty">Pretty active, will get on a few times everyday.</label>
+                    <label><input type="radio" name="active" value="casual">Casual, you'll join maybe everyday maybe once every other day.</label>
+                    <label><input type="radio" name="active" value="not">Not too active, you'll be on whenever you can, maybe a couple times a week.</label>
+                    <label><input type="radio" name="active" value="barely">Barely active, you'll hop on when you want, maybe once a week, maybe not.</label>
+                    <label><input type="radio" name="active" value="other">Other:<input type="text" name="other" class="other"></label>
+                </div>
+
+                <div class="question">
+                    <label><span class="bold">If you selected other, describe how active you'd be.</span>
+                        <textarea name="describe-active"></textarea></label>
+                </div>
+
+                <div class="question">
+                    <label><span class="bold">Why should be whitelist you?<span class="red">*</span></span>
+                        <textarea name="whitelist" required></textarea></label>
+                </div>
+
+                <div class="question">
+                    <div><span class="bold">What version of minecraft do you play?<span class="red">*</span></span></div>
+                    <label><input type="radio" name="version" value="java" required>Java Edition</label>
+                    <label><input type="radio" name="version" value="bedrock">Bedrock Edition</label>
+                </div>
+
+                <div class="question">
+                    <label><span class="bold">What is your Minecraft username?<span class="red">*</span></span> <br>
+                        Java player: Just write your normal username. <br>
+                        Bedrock: Please write your Bedrock edition username with a period before it.
+                        (If my Bedrock username is Roller, I would put ".Roller")
+                        <input type="text" name="username" required></label>
+                </div>
+
+                <div class="question">
+                    <label><span class="bold">What is your exact discord username?<span class="red">*</span></span>
+                        <input type="text" name="discord" required></label>
+                </div>
+
+                <input type="submit" value="Apply Now">
             </form>
         </main>
 

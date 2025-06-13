@@ -7,16 +7,26 @@
         <meta name="description" content="the home page for the hollow smp minecraft server">
         <meta name="author" content="description">
 
+        <script src="scripts/menu.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <img src="images/logo.webp" alt="Hollow SMP logo">
-            <h1>Hollow SMP</h1>
-            <a href="#" class="menu"></a>
-            <nav>
+            <div>
+                <img src="images/logo.webp" alt="Hollow SMP logo">
+                <h1>Hollow SMP</h1>
+
+                <a href="#" class="menu"></a>
+            </div>
+            <nav class="nav">
                 <a class="active" href="index.html">Home</a>
                 <a href="members.html">Members</a>
                 <a href="join.html">Join</a>
@@ -24,47 +34,77 @@
         </header>
 
         <main id="main-home">
+            <img class="banner" src="images/banner.webp" alt="banner image">
             <h2>Home</h2>
-            <img src="images/banner.webp" alt="banner image">
             <section class="info">
                 <div>
                     <img src="images/general.webp" alt="image">
                     <h3>General</h3>
-                    <p>version mostly vanilla server ip must be whitelisted</p>
+                    <p>This is a 1.21.5 server, we will be upgrading to 1.22 once it releases and the required mods
+                    update.</p>
+                    <p>This is a vanilla server. There are a couple of plug-ins, such as core inspect, multiple dragon
+                    egg drops, and custom map images.</p>
+                    <p>You MUST fill out the whitelist application to be able to join the server. You can find it
+                    <a href="join.html">here</a>.</p>
+                    <p>Java: hollowsmp.playit</p>
+                    <p>Bedrock: bedrockhollowsmp.playit</p>
+                    <p>Port: 40593</p>
                 </div>
                 <div>
                     <img src="images/rules.webp" atl="image">
                     <h3>Rules</h3>
+                    <p>Spawn is a safe area. No PVP.</p>
+                    <p>Make teams, or play alone. It's totally up to you.</p>
+                    <p>PVP is allowed, but be kind and have fun.</p>
+                    <p>Griefing and stealing are not allowed unless both parties have agreed to have a war.</p>
+                    <p>No duping, x-raying, cave finders, flying, seed finders, exploits, mob finders or any other kind of cheat.</p>
+                    <p>NO HARASSMENT.</p>
                 </div>
 
                 <div>
                     <img src="images/discord.webp" alt="image">
                     <h3>Discord</h3>
+                    <p>Join our discord server <a href="#">here</a>.</p>
+                    <p><span class="bold">Announcements:</span> Stay up to date with the latest server news,
+                        updates, and important info straight from the admins.</p>
+                    <p><span class="bold">Events:</span> Don’t miss out on community events, competitions,
+                        and special in-game activities happening soon!</p>
+                    <p><span class="bold">Polls</span>: Help shape the server’s future by voting on new
+                        features, rule changes, and upcoming event ideas.</p>
                 </div>
             </section>
 
             <section class="events">
-                <h3>Events</h3>
+                <div class="current">
+                    <h3>Current Events</h3>
+                    <p><span>Always Active</span> The Riddle Shrine</p>
+                    <p><span>June 8th - June 14th</span> Build Competition at Spawn</p>
+                    <p><span>June 10th - June 20th</span> Treasure Hunt</p>
+                    <p><span>June 13th - June 20th</span> Campaigning for Spawn President</p>
+                </div>
 
-                <h4>Current</h4>
-                <p><span>June 8th - June 14th</span>Build Competition at Spawn</p>
+                <div class="upcoming">
+                    <h3>Upcoming Events</h3>
+                    <p><span>TBD</span> Moving to Better Hosting Software</p>
+                    <p><span>June 21st</span> Vote for Spawn President</p>
+                </div>
 
-                <h4>Upcoming</h4>
-                <p><span>DBT</span>Moving to Better Hosting Software</p>
-
-                <h4>Recent</h4>
-                <p><span>Jun 9th</span>Trial at Court</p>
-                <p><span>June 7th</span>End Opens</p>
-
+                <div class="recent">
+                    <h3>Recent Events</h3>
+                    <p><span>Jun 9th </span>Trial at Court</p>
+                    <p><span>June 7th </span>End Opens</p>
+                </div>
             </section>
 
-            <section class="builds">
-                <h3>Builds</h3>
+<!--            <section class="builds">-->
+<!--                <h3>Builds</h3>-->
 
-            </section>
+<!--            </section>-->
         </main>
 
         <footer>
+            <p>©<span class="year"></span></p>
+            <p><span class="modified"></span></p>
 <!--
             back to top
             copyright
