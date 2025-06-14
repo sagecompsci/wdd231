@@ -3,8 +3,9 @@
     --color_page: #c1d193;
     --color_h1: #8ecb6d;
     /*--color_accent1: #8c7f5e;*/
-    --color_accent1:#3e382c;
+    --color_accent1: #3e382c;
     --color_accent2: #728fba;
+    --color_background: #d0d8e8;
 }
 
 html {
@@ -146,6 +147,27 @@ h2 {
     text-align: center;
 }
 
+.join div {
+    border: 3px dashed var(--color_accent2);
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+dialog {
+    background-color: var(--color_page);
+    color: var(--color_text);
+}
+
+.join button {
+    font-size: 1.2em;
+    font-family: dynapuff, "Times New Roman", sans-serif;
+    font-weight: 400;
+    background-color: var(--color_background);
+    color: var(--color_text);
+    border: 2px solid var(--color_text);
+}
+
 .form-join input:not([type="radio"], [type="text"].other),
 .form-join textarea,
 .form-join label{
@@ -214,3 +236,4 @@ footer nav a {
     margin: 1em;
 
 }
+

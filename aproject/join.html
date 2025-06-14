@@ -9,6 +9,7 @@
 
         <script src="scripts/menu.js" defer></script>
         <script src="scripts/date.js" defer></script>
+        <script src="scripts/modal.js" defer></script>
 
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
@@ -33,8 +34,52 @@
             </nav>
         </header>
 
-        <main id="main-join">
+        <main>
             <h2>Join</h2>
+            <section class="join">
+                <div>
+                    <h2>How do I join the server?</h2>
+                    <p>Joining the server is very simple. All you need to do fill out the
+                    whitelist application and join our discord server. You cannot play on
+                    the world unless you are a part of the discord server. You also MUST
+                    be whitelisted in order to be able to join the world.</p>
+                </div>
+
+                <div>
+                    <h2>How long will it take to get whitelisted?</h2>
+                    <p>It could take anywhere from a couple hours, to over a day. The
+                        server staff are not always available. It could take them some
+                        time to get your application. Rest assured, your application
+                        will be reviewed in due time.</p>
+                </div>
+
+                <div>
+                    <h2>Can I apply to be an admin or mod?</h2>
+                    <p>Of course! Once you have been whitelisted, please DM any mod or
+                        admin and let them know you would like to apply. There is a
+                        separate application for each. If you would like to apply to be
+                        both, you will have to fill out both applications.</p>
+                    <button id="open">Learn More</button>
+                    <dialog id="modal">
+                        <div>
+                            <h2>Mod</h2>
+                            <p>Moderators help keep the server safe and fun for everyone.
+                                They handle rule enforcement, assist players, and report issues to admins.
+                                We're looking for friendly, fair, and active community members who know how to
+                                de-escalate and stay cool under pressure.</p>
+                        </div>
+
+                        <div>
+                            <h2>Admin</h2>
+                            <p>Admins are trusted leaders who manage major aspects of the server—everything
+                                from plugin setups to player disputes. They help shape the direction of the
+                                server and support both staff and players. Admin roles are typically offered
+                                to long-term, highly involved members with a strong track record.</p>
+                        </div>
+                        <button id="close">❌</button>
+                    </dialog>
+                </div>
+            </section>
             <form method="get" action="thanks.html" class="form-join">
                 <div class="question">
                     <div><span class="bold">Have you ever played a Minecraft SMP before?<span class="red">*</span></span></div>
