@@ -46,8 +46,6 @@ header img {
     height: auto;
 }
 
-
-
 .nav {
     display: none;
     margin-left: auto;
@@ -59,8 +57,19 @@ header img {
 
 .nav.open a {
     display: block;
+    width: fit-content;
+    margin: 1em auto;
     text-decoration: none;
     color: var(--color_h1);
+    padding: .2em;
+}
+
+
+.nav.open a:hover,
+.active {
+    border-left: .2em solid var(--color_h1);
+    position: relative;
+    left: .2em;
 }
 
 .menu {
@@ -178,4 +187,30 @@ textarea {
 
 .red {
     color: red;
+}
+
+
+footer {
+    background-color: var(--color_accent1);
+    color: var(--color_h1);
+    padding: 1em;
+    margin-top: 1em;
+}
+
+footer p,
+footer nav{
+    margin: 2em;
+    text-align: center;
+}
+
+footer nav {
+    align-content: center;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: var(--color_h1);
+    border-bottom: 2px solid var(--color_accent2);
+    margin: 1em;
+
 }
