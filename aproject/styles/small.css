@@ -15,7 +15,7 @@ html {
     font-weight: 400;
 }
 
-h1 {
+header h1 {
     color: var(--color_h1);
     font-family: dynapuff, arial, sans-serif;
     font-weight: 700;
@@ -88,7 +88,11 @@ header img {
     content: "x";
 }
 
-h2 {
+h1:not(header) {
+    text-align: center;
+}
+
+#welcome {
     text-align: center;
 }
 
@@ -168,14 +172,14 @@ dialog {
     border: 2px solid var(--color_text);
 }
 
-.form-join input:not([type="radio"], [type="text"].other),
+.form-join input:not([type="radio"]),
 .form-join textarea,
 .form-join label{
     display: block;
     padding: .5em;
 }
 
-.form-join input[type="text"]:not([type="text"].other) {
+.form-join input[type="text"] {
     margin: auto;
 }
 

@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Joing The Hollow SMP</title>
+        <title>Joining Hollow SMP</title>
         <meta name="description" content="the join page for the hollow smp minecraft server">
         <meta name="author" content="description">
 
         <script src="scripts/menu.js" defer></script>
         <script src="scripts/date.js" defer></script>
         <script src="scripts/modal.js" defer></script>
+        <script type="module" src="scripts/roles.mjs"></script>
 
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
@@ -35,7 +36,7 @@
         </header>
 
         <main>
-            <h2>Join</h2>
+            <h1>Join</h1>
             <section class="join">
                 <div>
                     <h2>How do I join the server?</h2>
@@ -80,13 +81,18 @@
                     </dialog>
                 </div>
             </section>
+            <section>
+                <p>Once you join the discord server, there are <span id="num-roles"></span>
+                    roles you can choose from. You can choose as many roles as you would like.</p>
+                <ul id="roles-list"></ul>
+            </section>
             <form method="get" action="thanks.html" class="form-join">
                 <div class="question">
                     <div><span class="bold">Have you ever played a Minecraft SMP before?<span class="red">*</span></span></div>
                     <label><input type="radio" name="played" value="yes" required>Yes</label>
                     <label><input type="radio" name="played" value="no">No</label>
                     <label><input type="radio" name="played" value="realm">Yes, but on a Bedrock Edition Realm</label>
-                    <label><input type="radio" name="played" value="other">Other: <input type="text" name="other" class="other"></label>
+                    <label><input type="radio" name="played" value="other">Other</label>
                 </div>
 
                 <div class="question">
@@ -113,7 +119,7 @@
                     <label><input type="radio" name="active" value="casual">Casual, you'll join maybe everyday maybe once every other day.</label>
                     <label><input type="radio" name="active" value="not">Not too active, you'll be on whenever you can, maybe a couple times a week.</label>
                     <label><input type="radio" name="active" value="barely">Barely active, you'll hop on when you want, maybe once a week, maybe not.</label>
-                    <label><input type="radio" name="active" value="other">Other:<input type="text" name="other" class="other"></label>
+                    <label><input type="radio" name="active" value="other">Other</label>
                 </div>
 
                 <div class="question">
@@ -122,7 +128,7 @@
                 </div>
 
                 <div class="question">
-                    <label><span class="bold">Why should be whitelist you?<span class="red">*</span></span>
+                    <label><span class="bold">Why should we whitelist you?<span class="red">*</span></span>
                         <textarea name="whitelist" required></textarea></label>
                 </div>
 
@@ -150,8 +156,8 @@
         </main>
 
         <footer>
-            <p>©<span class="year"></span> | Hollow SMP | version 1.21.5</p>
-            <p>Last Modified<span class="modified"></span></p>
+            <p>©<span id="year"></span> | Hollow SMP | version 1.21.5</p>
+            <p>Last Modified<span id="modified"></span></p>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="members.html">Members</a>

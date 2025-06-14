@@ -1,9 +1,13 @@
 const file = "data/members.json";
 
 async function getData() {
-    const response = await fetch(file);
-    const data = await response.json();
-    display(data.members);
+    try {
+        const response = await fetch(file);
+        const data = await response.json();
+        display(data.members);
+    } catch(error) {
+        console.log(error.message);
+    }
 }
 
 const display = (members) => {
@@ -22,6 +26,7 @@ const display = (members) => {
         image.setAttribute("alt", `${member.username} profile image`);
         image.setAttribute("height", "240");
         image.setAttribute("width", "240");
+        image.setAttribute("loading", "lazy");
         image.style.borderRadius = "50%";
 
         username.textContent = `${member.username}`;
@@ -29,26 +34,7 @@ const display = (members) => {
 
         member.roles.forEach((role) => {
             const li = document.createElement("li");
-            if (role === "o") {
-                role = "⭐Owner";
-            } else if (role === "a") {
-                role = "💼Admin";
-            } else if (role === "m") {
-                role = "👁️Moderator";
-            } else if (role === "f") {
-                role = "🌾Farmer";
-            } else if (role === "p") {
-                role = "🕊️Peaceful Player";
-            } else if (role === "pvp") {
-                role = "⚔️PVP Player";
-            } else if (role === "w") {
-                role = "🗺️Wandering Player";
-            } else if (role === "b") {
-                role = "🔨Builder";
-            } else if (role === "r") {
-                role = "⚙️Redstone Mechanic";
-            }
-
+            role = displayRoles(role);
             li.textContent = `${role}`
             roles.appendChild(li);
         })
@@ -65,6 +51,29 @@ const display = (members) => {
 
     const num_members = document.querySelector(".num_members");
     num_members.textContent = `${num}`;
+}
+
+export const displayRoles = (role) => {
+    if (role === "o") {
+        role = "⭐Owner";
+    } else if (role === "a") {
+        role = "💼Admin";
+    } else if (role === "m") {
+        role = "👁️Moderator";
+    } else if (role === "f") {
+        role = "🌾Farmer";
+    } else if (role === "p") {
+        role = "🕊️Peaceful Player";
+    } else if (role === "pvp") {
+        role = "⚔️PVP Player";
+    } else if (role === "w") {
+        role = "🗺️Wandering Player";
+    } else if (role === "b") {
+        role = "🔨Builder";
+    } else if (role === "r") {
+        role = "⚙️Redstone Mechanic";
+    }
+    return role;
 }
 
 getData();

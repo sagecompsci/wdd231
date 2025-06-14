@@ -9,6 +9,7 @@
 
         <script src="scripts/menu.js" defer></script>
         <script src="scripts/date.js" defer></script>
+        <script src="scripts/welcome.js" defer></script>
 
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
@@ -21,7 +22,7 @@
     <body>
         <header>
             <div>
-                <img src="images/logo.webp" alt="Hollow SMP logo">
+                <img src="images/logo.webp" alt="Hollow SMP logo" loading="lazy">
                 <h1>Hollow SMP</h1>
 
                 <a href="#" class="menu"></a>
@@ -34,25 +35,25 @@
         </header>
 
         <main id="main-home">
-            <img class="banner" src="images/banner.webp" alt="banner image">
-            <h2>Home</h2>
+            <h1>Home</h1>
+            <p id="welcome"></p>
+            <img class="banner" src="images/banner.webp" alt="banner image" loading="lazy">
             <section class="info">
                 <div>
-                    <img src="images/general.webp" alt="image">
-                    <h3>General</h3>
+                    <img src="images/general.webp" alt="image" loading="lazy">
+                    <h2>General</h2>
                     <p>This is a 1.21.5 server, we will be upgrading to 1.22 once it releases and the required mods
                     update.</p>
                     <p>This is a vanilla server. There are a couple of plug-ins, such as core inspect, multiple dragon
                     egg drops, and custom map images.</p>
-                    <p>You MUST fill out the whitelist application to be able to join the server. You can find it
-                    <a href="join.html">here</a>.</p>
+                    <p>You MUST fill out the <a href="join.html">whitelist application</a> to be able to join the server.</p>
                     <p>Java: hollowsmp.playit</p>
                     <p>Bedrock: bedrockhollowsmp.playit</p>
                     <p>Port: 40593</p>
                 </div>
                 <div>
-                    <img src="images/rules.webp" atl="image">
-                    <h3>Rules</h3>
+                    <img src="images/rules.webp" alt="image" loading="lazy">
+                    <h2>Rules</h2>
                     <p>Spawn is a safe area. No PVP.</p>
                     <p>Make teams, or play alone. It's totally up to you.</p>
                     <p>PVP is allowed, but be kind and have fun.</p>
@@ -62,8 +63,8 @@
                 </div>
 
                 <div>
-                    <img src="images/discord.webp" alt="image">
-                    <h3>Discord</h3>
+                    <img src="images/discord.webp" alt="image" loading="lazy">
+                    <h2>Discord</h2>
                     <p>Join our discord server <a href="#">here</a>.</p>
                     <p><span class="bold">Announcements:</span> Stay up to date with the latest server news,
                         updates, and important info straight from the admins.</p>
@@ -76,7 +77,7 @@
 
             <section class="events">
                 <div class="current">
-                    <h3>Current Events</h3>
+                    <h2>Current Events</h2>
                     <p><span>Always Active</span> The Riddle Shrine</p>
                     <p><span>June 8th - June 14th</span> Build Competition at Spawn</p>
                     <p><span>June 10th - June 20th</span> Treasure Hunt</p>
@@ -84,13 +85,13 @@
                 </div>
 
                 <div class="upcoming">
-                    <h3>Upcoming Events</h3>
+                    <h2>Upcoming Events</h2>
                     <p><span>TBD</span> Moving to Better Hosting Software</p>
                     <p><span>June 21st</span> Vote for Spawn President</p>
                 </div>
 
                 <div class="recent">
-                    <h3>Recent Events</h3>
+                    <h2>Recent Events</h2>
                     <p><span>Jun 9th </span>Trial at Court</p>
                     <p><span>June 7th </span>End Opens</p>
                 </div>
@@ -98,8 +99,8 @@
         </main>
 
         <footer>
-            <p>©<span class="year"></span> | Hollow SMP | version 1.21.5</p>
-            <p>Last Modified<span class="modified"></span></p>
+            <p>©<span id="year"></span> | Hollow SMP | version 1.21.5</p>
+            <p>Last Modified<span id="modified"></span></p>
             <p>Video: <a href=""></a></p>
             <nav>
                 <a href="index.html">Home</a>

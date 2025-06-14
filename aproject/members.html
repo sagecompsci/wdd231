@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Hollow SMP</title>
+        <title>Members of Hollow SMP</title>
         <meta name="description" content="the home page for the hollow smp minecraft server">
         <meta name="author" content="description">
 
         <script src="scripts/menu.js" defer></script>
         <script src="scripts/date.js" defer></script>
-        <script src="scripts/members.js" defer></script>
+        <script type="module" src="scripts/members.mjs"></script>
 
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
@@ -36,14 +36,14 @@
         </header>
 
         <main>
-            <h2>Members</h2>
+            <h1>Members</h1>
             <p class="center"><span class="num_members"></span> members</p>
             <section id="members"></section>
         </main>
 
         <footer>
-            <p>©<span class="year"></span> | Hollow SMP | version 1.21.5</p>
-            <p>Last Modified<span class="modified"></span></p>
+            <p>©<span id="year"></span> | Hollow SMP | version 1.21.5</p>
+            <p>Last Modified<span id="modified"></span></p>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="members.html">Members</a>
