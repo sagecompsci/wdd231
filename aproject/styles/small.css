@@ -172,6 +172,13 @@ dialog {
     border: 2px solid var(--color_text);
 }
 
+#roles {
+    text-align: center;
+}
+
+#roles ul{
+    list-style: none;
+}
 .form-join input:not([type="radio"]),
 .form-join textarea,
 .form-join label{
@@ -212,7 +219,7 @@ textarea {
 }
 
 .red {
-    color: red;
+    color: #94090D;
 }
 
 
@@ -233,7 +240,7 @@ footer nav {
     align-content: center;
 }
 
-footer nav a {
+footer nav a{
     text-decoration: none;
     color: var(--color_h1);
     border-bottom: 2px solid var(--color_accent2);
